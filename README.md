@@ -1,5 +1,7 @@
 # part-2-cnn-computer-vision
 
+## Dataset source - https://drive.google.com/drive/folders/17xoSIAe-24-18iJiN3zKPqJl-RNDqIeW
+
 1) What is convolution? - It's like scanning a large picture with a small magnifying glass, looking for specific details. In a Convolutional Neural Network (CNN), that 'magnifying glass' is a small grid of numbers called a filter or kernel. Convolution is the math process of sliding this filter across the original image, one tiny section at a time, to detect patterns like edges, curves, or specific textures. The result is a new, filtered version of the image called a "feature map" that highlights those specific patterns.
 
 2) Why is pooling used? - Pooling is essentially a way to shrink or summarize the image data. Once the convolution step finds features (like an edge or a curve), we don't need to know its exact pixel location—we just need to know roughly where it is. Pooling steps in and downsamples the image. This does two great things: it drastically reduces the amount of math the computer has to do, and it makes the model "translation invariant," meaning it can still recognize an object even if it's shifted slightly to the left or right.
